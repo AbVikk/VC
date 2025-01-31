@@ -1,0 +1,58 @@
+#home{
+    background: linear-gradient(to left, brown, grey);
+}
+#first{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(image/freepik__background__58676.png);
+    background-size: 50%;
+    background-repeat: 2;
+    background-position-x: center;
+    background-position-y: ;
+}
+#second{
+    top: 15%;
+    height: 70%;
+    width: 30%;
+    left: 35%;
+    position: absolute;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.first{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+#num{
+    padding: 8px;
+    border-radius: 5px;
+    width: 100px;
+}
+#go{
+    padding: 8px;
+    border-radius: 5px;
+    width: 100px;
+}
+#goo{
+    padding: 8px;
+    border-radius: 5px;
+    width: 100px;
+}
+#fro{
+    padding: 8px;
+    border-radius: 5px;
+    width: 100px;
+}
+#no{
+    padding: 8px;
+    border-radius: 5px;
+    width: 100px;
+}
+#m{
+    padding: 8px;
+    border-radius: 5px;
+    width: 100px;
+}

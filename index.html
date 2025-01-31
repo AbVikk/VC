@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+    <div id="first">
+
+        <div id="second">
+            <form action="" method="post" class="first">
+                <label for="denom" ></label>
+                <input type="text" value="500" name="denom" readonly id="num" onchange="data()">
+                <label for="price"></label>
+                <input type="text" name="price" id="go" placeholder="input amount" oninput="data()">=
+                <label for="total"></label>
+                <input type="text" name="total" id="goo" placeholder="Total" oninput="data()"><br><br>
+
+                <label for="denomm"></label>
+                <input type="text" value="1000" name="denomm" readonly id="fro" onchange="data()">
+                <label for="pricee"></label>
+                <input type="text" name="pricee" id="no" placeholder="input amount" oninput="data()">=
+                <label for="totall"></label>
+                <input type="text" name="totall" id="m" placeholder="Total" oninput="data()"><br><br>
+
+                <label for="submit"></label>
+                <input type="text" name="submit" placeholder="Grand Total" id="come" oninput="data()">
+
+                <script>
+                    function data(){
+                        let denom = document.getElementById("num").value;
+                        let price = document.getElementById("go").value;
+
+                        document.getElementById("goo").value = denom * price; 
+
+                        let denomm = document.getElementById("fro").value;
+                        let pricee = document.getElementById("no").value;
+
+                        document.getElementById("m").value = denomm * pricee; 
+
+                        let goo = document.getElementById("goo").value;
+                        let m = document.getElementById("m").value;
+
+
+                        document.getElementById("come").value = Number(goo) + Number(m);
+
+                       
+
+                        
+                    }
+                </script>
+
+
+            </form>
+
+            
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

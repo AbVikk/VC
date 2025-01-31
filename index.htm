@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="first">
+
+        <div id="second">
+
+        </div>
+
+        <div id="third">
+            <form action="" method="post" class="a">
+                <label for="network" class="b">network</label><br>
+                <select name="network" id="secod" required onchange="data()">
+                    <option value="">--Select Network--</option>
+                    <option value="MTN">MTN</option>
+                    <option value="GLO">GLO</option>
+                    <option value="AIRTEL">AIRTEL</option>
+                </select><br><br>
+
+                <label for="plan" class="c">plan</label><br>
+                <select name="plan" id="tird"  required onchange="data()">
+                    <option value="">--select plan--</option>
+                    <option value="350">1gb</option>
+                    <option value="500">2gb</option>
+                    <option value="700">3gb</option>
+                    <option value="900">4gb</option>
+                    <option value="1100">5gb</option>
+                    <option value="1500">6gb</option>
+                </select><br><br>
+
+                <label for="price" class="d">price</label><br>
+                <input type="text" name="price" id="foth" placeholder="price" oninput="data()"><br><br>
+
+                <input type="submit" value="Submit" id="fith">
+
+                <script>
+                    function data(){
+                        let network = document.getElementById("secod").value;
+                        let plan = document.getElementById("tird").value;
+                        document.getElementById("foth").value = plan;
+                    }
+
+
+                </script>
+            </form>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
